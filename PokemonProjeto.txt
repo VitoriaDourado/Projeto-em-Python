@@ -1,0 +1,53 @@
+print ('Olá, escolha seu pokemon')
+print ('Bulbassauro || ', 'Charmander || ', 'Pikachu')
+pokemon = input('Digite o nome certo de seu pokemon: ')
+
+while (pokemon != 'Bulbassauro') or (pokemon != 'Charmander') or (pokemon != 'Pikachu'):
+
+
+    if pokemon == 'Bulbassauro':
+        print('Você escolheu Bulbassauro de nível 7')
+        break;
+        
+    elif pokemon == 'Charmander':
+        print('Você escolheu Charmander de nível 7')
+        break;
+        
+    elif pokemon == 'Pikachu':
+        print('Você escolheu Pikachu de nível 7')
+        break;
+        
+    else:
+        print('Pokemon inválido, tente novamente')
+        pokemon = input('Digite o nome certo de seu pokemon: ')
+    
+apelido = input('Qual o apelido de seu pokemon? ')
+print ('Seu', pokemon, 'agora se chama', apelido)
+
+confirmação = input('Quer continuar com esse apelido? Digite "Sim" ou "Não": ')
+
+while(confirmação == 'Não') or (confirmação != 'Sim'):
+
+    if confirmação == 'Sim':
+        print('Então vamos colocar seu pokemon', apelido, 'para lutar e ganhar sua primeira experiência')
+        break;
+    
+    elif confirmação == 'Não':
+        apelido = input('Qual o apelido de seu pokemon? ')
+        confirmação = input('Quer continuar com esse apelido? Digite "Sim" ou "Não": ')
+    
+    else:
+        print('Coloque uma confirmação válida')
+        confirmação = input('Quer continuar com esse apelido? Digite "Sim" ou "Não": ')
+        
+print('Então vamos colocar seu pokemon', apelido, 'para lutar e ganhar sua primeira experiência')
+nomePessoa = input('Uma pessoa quer lutar contra você, qual o nome dela? ')
+
+print(nomePessoa, ':Olá, adoraria batalhar com você, meu nome é', nomePessoa, 'qual seu nome? ')
+seuNome = input('Digite seu nome ')
+
+print(nomePessoa, ':Olá', seuNome, 'prazer em te conhecer, agora vamos para o que interessa, vamos ver quem tem o melhor pokemon')
+print(nomePessoa, 'Enviou Ratata nível 7')
+print(nomePessoa, ': Ratata, agora é com você')
+print('Você:', pokemon, 'vai!')
+        
